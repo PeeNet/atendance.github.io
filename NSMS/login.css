@@ -1,0 +1,151 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    background-image: url(img/Artboard\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    height: 100vh;           /* Full viewport height */
+    color: #333;
+}
+
+/* Container for the Form */
+.container {
+    background: #fff; /* White background for content */
+    padding: 40px;
+    margin-top: -100px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Header Style */
+h1 {
+    color: #007bff; /* Primary blue color for header */
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly enlarge button on hover */
+}
+   
+
+
+/* Link to Register */
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Error/Success Messages */
+#message {
+    color: #d9534f; /* Red for error messages */
+    font-weight: bold;
+    display: none;
+}
+
+        /* Footer Styling */
+        .page-footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: -40px;
+            width: 100%;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px; /* Reduced margin above footer */
+        } 
+.avater{
+    width: 100px;
+    height: 50px;
+}
+
+.page-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+    color: #ff6600;
+}
+
+.page-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Animation for Sliding Content */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .page-footer {
+        font-size: 12px;
+    }
+}

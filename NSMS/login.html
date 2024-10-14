@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif; /* Modern, clean font */
+        
+            background-image: url(img/Logon.jpg) ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; /* Light background for contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Horizontal center */
+            align-items: center;     /* Vertical center */
+            height: 100vh;           /* Full viewport height */
+            color: #333;
+        }
+
+        /* Title styling */
+        .admin-title {
+            text-align: center;
+            font-size: 3em; /* Large font size */
+            color: #3498db; /* Color of the title */
+            margin-bottom: 0px; /* Reduced space below the title */
+        }
+
+        /* Container for the Form */
+        .container {
+            background: #fff; /* White background for content */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: -65px;
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Header Style */
+        h1 {
+            color: #007bff; /* Primary blue color for header */
+            margin-bottom: 10px; /* Reduced margin for better spacing */
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border 0.3s;
+        }
+
+        input:focus {
+            border: 1px solid #007bff;
+            outline: none;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: scale(1.02); /* Slightly enlarge button on hover */
+        }
+
+        /* Link to Register */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px; /* Reduced space above links */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Error/Success Messages */
+        #message {
+            color: #d9534f; /* Red for error messages */
+            font-weight: bold;
+            display: none;
+        }
+
+        /* Footer Styling */
+        .page-footer {
+            background-color: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: -40px;
+            width: 100%;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px; /* Reduced margin above footer */
+        } .avater{
+            height: 50px;
+        }
+
+        .page-footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .page-footer a:hover {
+            color: #ff6600;
+        }
+
+        .page-footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* Animation for Sliding Content */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .page-footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1 class="admin-title">LEYAATA HOSPITAL</h1>
+        
+        <br>
+        <h1 style="color: black;">Login</h1>
+
+        <form action="login.php" method="post" id="loginForm">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Link to Reset Password page -->
+        <br> 
+        <a href="reset_password.html">Forgot Password?</a>
+        <br>
+        <a href="main.html">Register as new member</a>
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="nlogin.js"></script>
+    <style>
+        .avater img{
+    width: 50px;
+    border-radius:100px;
+    align-items:center;
+    z-index: -1;
+}
+    </style>
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="avater">
+                <img src="img/IMG-20240702-WA0017.jpg " alt="">
+            </div>
+            <p>Developed by <a href="https://web.facebook.com/pirasski.gh" target="_blank">Ampomah Peter</a></p>
+            <p>&copy; 2024 - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

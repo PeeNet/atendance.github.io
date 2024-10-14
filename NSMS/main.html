@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYH REGISTER</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    /* Style the Unit Label */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Style the Unit Dropdown */
+select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+select:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* General input styles for consistency */
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>REGISTER</h1>
+        <form action="register.php" method="post" id="loginForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <br><input type="email" name="email" placeholder="Email" required>
+            <br><input type="password" name="password" placeholder="Password" required>
+            <br><input type="text" name="role" placeholder="Role" required>
+            
+            <!-- New Unit Dropdown -->
+            <br><label for="unit">Unit:</label>
+            <select name="unit" id="unit" required>
+                <option value="Maternity">Maternity</option>
+                <option value="Emergency">Emergency</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <!-- Add more units as needed -->
+            </select>
+            
+            <br><button type="submit">Register</button>
+            <br><a href="login.html"><h4>Login</h4></a>
+        </form>
+    
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <script src="nlogin.js"></script>
+    
+    <!-- Footer Section -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p>Developed by <a href="mailto:ampomahpeter13@gmail.com" target="_blank">Ampomah Peter</a></p>
+            <p>&copy; 2024 - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
